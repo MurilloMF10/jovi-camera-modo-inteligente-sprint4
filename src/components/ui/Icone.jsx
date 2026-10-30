@@ -8,7 +8,10 @@ function Icone({ definicao, className = '' }) {
     const icone = createElement(definicao)
     icone.setAttribute('aria-hidden', 'true')
     icone.setAttribute('focusable', 'false')
-    icone.classList.add('size-6', className)
+    icone.classList.add('size-6')
+    if (className) {
+      icone.classList.add(className)
+    }
     iconeRef.current.replaceChildren(icone)
   }, [className, definicao])
 
