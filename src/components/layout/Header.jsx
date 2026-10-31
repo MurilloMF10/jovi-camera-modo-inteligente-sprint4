@@ -11,7 +11,7 @@ const linksNavegacao = [
   { caminho: '/equipe', rotulo: 'Equipe' },
 ]
 
-function Header() {
+function Header({ aoAbrirContato }) {
   const [menuAberto, setMenuAberto] = useState(false)
 
   function fecharMenu() {
@@ -56,7 +56,10 @@ function Header() {
           <button
             className="rounded-md bg-azul px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#324bc0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul"
             type="button"
-            onClick={fecharMenu}
+            onClick={(evento) => {
+              fecharMenu()
+              aoAbrirContato(evento)
+            }}
           >
             Contate-nos
           </button>
