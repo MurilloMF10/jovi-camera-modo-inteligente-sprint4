@@ -4,16 +4,19 @@ import Galeria from '../components/home/Galeria'
 import Hero from '../components/home/Hero'
 import PublicoAlvo from '../components/home/PublicoAlvo'
 import Solucao from '../components/home/Solucao'
+import { useOutletContext } from 'react-router'
 
 function Home() {
+  const { abrirContato } = useOutletContext()
+
   return (
     <>
-      <Hero />
+      <Hero aoAbrirContato={abrirContato} />
       <FaixaNumeros />
       <Solucao />
       <PublicoAlvo />
       <Galeria />
-      <ChamadaFinal />
+      <ChamadaFinal aoAbrirContato={abrirContato} />
     </>
   )
 }

@@ -1,4 +1,4 @@
-function Hero() {
+function Hero({ aoAbrirContato }) {
   return (
     <section className="relative isolate overflow-hidden bg-fundo text-texto">
       <img
@@ -20,7 +20,7 @@ function Hero() {
           <a className="rounded-md bg-azul px-5 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-[#324bc0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul" href="#solucao">
             Ver como funciona
           </a>
-          <button className="rounded-md border border-borda px-5 py-3 text-sm font-medium text-texto transition-colors hover:bg-cartao focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul" type="button">
+          <button className="rounded-md border border-borda px-5 py-3 text-sm font-medium text-texto transition-colors hover:bg-cartao focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul" type="button" onClick={aoAbrirContato}>
             Contate-nos
           </button>
         </div>
