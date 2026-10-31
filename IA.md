@@ -16,7 +16,6 @@ A IA foi utilizada como ferramenta de apoio para:
 - apresentar alternativas de interface e organização visual;
 - validar ideias definidas pelo grupo;
 - auxiliar na identificação de problemas;
-- orientar testes com `npm run dev`, `npm run lint` e `npm run build`.
 
 A IA não substituiu as decisões do grupo. A proposta do produto, as páginas, os conteúdos, as imagens e a identidade visual foram definidos e aprovados pelo grupo.
 

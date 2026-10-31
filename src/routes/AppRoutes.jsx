@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router'
+import { createBrowserRouter } from 'react-router'
 import Layout from '../components/layout/Layout'
 import Avaliacoes from '../pages/Avaliacoes'
 import Equipe from '../pages/Equipe'
@@ -8,20 +8,19 @@ import Login from '../pages/Login'
 import NaoEncontrada from '../pages/NaoEncontrada'
 import Painel from '../pages/Painel'
 
-function AppRoutes() {
-  return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="avaliacoes" element={<Avaliacoes />} />
-        <Route path="faq" element={<Faq />} />
-        <Route path="equipe" element={<Equipe />} />
-        <Route path="login" element={<Login />} />
-        <Route path="painel" element={<Painel />} />
-        <Route path="*" element={<NaoEncontrada />} />
-      </Route>
-    </Routes>
-  )
-}
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'avaliacoes', element: <Avaliacoes /> },
+      { path: 'faq', element: <Faq /> },
+      { path: 'equipe', element: <Equipe /> },
+      { path: 'login', element: <Login /> },                                        
+      { path: 'painel', element: <Painel /> },
+      { path: '*', element: <NaoEncontrada /> },
+    ],
+  },
+])
 
-export default AppRoutes
+export default router
