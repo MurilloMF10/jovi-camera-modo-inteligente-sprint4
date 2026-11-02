@@ -1,8 +1,8 @@
 const galeria = [
   {
     imagem: '/img/camera-modo-inteligente.png',
-    alt: 'Tela da câmera Jovi com o Modo Inteligente selecionado.',
-    titulo: 'Câmera no Modo Inteligente',
+    alt: 'Tela da câmera Jovi com o JOVI MATH selecionado.',
+    titulo: 'Câmera no JOVI MATH',
     descricao: 'O modo dedicado prepara a câmera para identificar expressões matemáticas.',
   },
   {

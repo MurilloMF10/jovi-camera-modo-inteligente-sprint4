@@ -10,16 +10,16 @@ function Equipe() {
     <section className="bg-fundo px-5 py-16 text-texto sm:px-8 lg:px-12 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-azul-claro">Equipe Codex</p>
+          <p className="text-sm font-medium text-azul-claro">Equipe Codex</p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Pessoas por trás da proposta</h1>
           <p className="mt-4 text-base leading-7 text-texto-suave">
-            Um grupo multidisciplinar que uniu desenvolvimento e comunicação para apresentar o Modo Inteligente da Câmera Jovi.
+            Um grupo multidisciplinar que uniu desenvolvimento e comunicação para apresentar o JOVI MATH.
           </p>
         </div>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {integrantes.map(({ nome, funcao, descricao, imagem }) => (
-            <article key={nome} className="overflow-hidden rounded-xl border border-borda bg-cartao">
+            <article key={nome} className="overflow-hidden border border-borda bg-cartao">
               <img className="aspect-square w-full object-cover" src={imagem} alt={`Foto de ${nome}, ${funcao}`} width="480" height="480" />
               <div className="p-6">
                 <p className="text-sm font-medium text-azul-claro">{funcao}</p>

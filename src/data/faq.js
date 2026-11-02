@@ -1,8 +1,8 @@
 const perguntasFrequentes = [
   {
     id: 'modo-inteligente',
-    pergunta: 'Como funciona o Modo Inteligente?',
-    resposta: 'No app de câmera da Jovi, a pessoa seleciona o Modo Inteligente e enquadra uma equação. O Codex identifica o cálculo e apresenta uma resolução organizada, com resultado e etapas de raciocínio.',
+    pergunta: 'Como funciona o JOVI MATH?',
+    resposta: 'No app de câmera da Jovi, a pessoa seleciona o JOVI MATH e enquadra uma equação. O Codex identifica o cálculo e apresenta uma resolução organizada, com resultado e etapas de raciocínio.',
   },
   {
     id: 'celulares-disponiveis',

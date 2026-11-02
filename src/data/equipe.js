@@ -20,7 +20,7 @@ const integrantes = [
   {
     nome: 'Thalles',
     funcao: 'Produtor Audiovisual',
-    descricao: 'Responsável pela produção do vídeo de apresentação, comunicando a proposta do Modo Inteligente da Câmera Jovi.',
+    descricao: 'Responsável pela produção do vídeo de apresentação, comunicando a proposta do JOVI MATH.',
     imagem: '/img/membro_Thalles.png',
   },
 ]

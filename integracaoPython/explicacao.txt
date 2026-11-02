@@ -1,0 +1,4 @@
+Nosso projeto de python permite o usuário a exportar o histórico de contas realizadas pela feature desenvolvida.
+Colocamos um exemplo de historico desenvolvido pela feature para usar de teste na pagina Jovi Math
+
+baixe o arquivo.json e anexe ele a label da página Jovi Math

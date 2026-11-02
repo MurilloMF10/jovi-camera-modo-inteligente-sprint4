@@ -1,25 +1,43 @@
 @import "tailwindcss";
 
 @theme {
-  --color-fundo: #0B0B0D;
-  --color-secao-clara: #F2F3F6;
-  --color-cartao: #17181C;
-  --color-borda: #2A2C33;
-  --color-texto: #F5F5F7;
-  --color-texto-suave: #A1A4AD;
-  --color-azul: #3F5CE0;
-  --color-azul-claro: #8CA0F0;
-  --color-texto-escuro: #14161B;
-  --color-texto-escuro-suave: #4A4F5A;
+  --color-fundo: #101217;
+  --color-secao-clara: #F3F4F2;
+  --color-cartao: #1A1D24;
+  --color-borda: #323742;
+  --color-texto: #F4F5F7;
+  --color-texto-suave: #B3B8C4;
+  --color-azul: #3852C8;
+  --color-azul-claro: #C9D4F5;
+  --color-texto-escuro: #191B22;
+  --color-texto-escuro-suave: #555B68;
+  --color-superficie: #FFFFFF;
+  --color-borda-clara: #C8CBD2;
+  --color-borda-sutil: #D7D9DF;
+  --color-borda-divisoria: #E1E3E8;
+  --color-borda-escura: #8B92A0;
+  --color-azul-suave: #E7EBFF;
+  --color-azul-profundo: #2945BD;
+  --color-azul-neblina: #E9EDFF;
+  --color-texto-azul-suave: #485271;
+  --color-sobreposicao: #000000;
+  --color-erro: #B42318;
+  --color-borda-erro: #F5C2C7;
+  --color-sucesso: #157347;
 }
 
 @layer base {
   html {
-    font-family: system-ui, sans-serif;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
     background-color: var(--color-fundo);
   }
 
   body {
     margin: 0;
+  }
+
+  h1, h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 600;
   }
 }

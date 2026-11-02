@@ -29,19 +29,19 @@ function Login() {
     <section className="bg-secao-clara px-5 py-16 text-texto-escuro sm:px-8 sm:py-20 lg:px-12">
       <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-start">
         <div className="max-w-xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-azul">Área Jovi</p>
+          <p className="text-sm font-medium text-azul">Área Jovi</p>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Acesse o painel de mensagens</h1>
           <p className="mt-4 leading-7 text-texto-escuro-suave">
             Esta é uma autenticação simulada para demonstração acadêmica. Ela não oferece segurança para uso real.
           </p>
         </div>
 
-        <div className="border border-[#d7d9df] bg-white p-6 shadow-sm sm:p-8">
+        <div className="border border-borda-sutil bg-superficie p-6 shadow-sm sm:p-8">
           <form className="space-y-5" onSubmit={enviarFormulario} noValidate>
             <div>
               <label className="text-sm font-medium" htmlFor="email-login">E-mail</label>
               <input
-                className="mt-2 w-full rounded-md border border-[#c8cbd2] bg-white px-3 py-2.5 outline-none transition-colors focus:border-azul focus:ring-2 focus:ring-azul/25"
+                className="mt-2 w-full rounded-sm border border-borda-clara bg-superficie px-3 py-2.5 outline-none focus:border-azul focus:ring-2 focus:ring-azul/25"
                 id="email-login"
                 type="email"
                 value={email}
@@ -53,7 +53,7 @@ function Login() {
             <div>
               <label className="text-sm font-medium" htmlFor="senha-login">Senha</label>
               <input
-                className="mt-2 w-full rounded-md border border-[#c8cbd2] bg-white px-3 py-2.5 outline-none transition-colors focus:border-azul focus:ring-2 focus:ring-azul/25"
+                className="mt-2 w-full rounded-sm border border-borda-clara bg-superficie px-3 py-2.5 outline-none focus:border-azul focus:ring-2 focus:ring-azul/25"
                 id="senha-login"
                 type="password"
                 value={senha}
@@ -63,12 +63,12 @@ function Login() {
               />
             </div>
             {erro && <p className="text-sm text-red-700" role="alert">{erro}</p>}
-            <button className="w-full rounded-md bg-azul px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-[#324bc0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul" type="submit">
+            <button className="w-full rounded-sm bg-azul px-5 py-3 text-sm font-medium text-superficie transition-colors hover:bg-azul-profundo focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul" type="submit">
               Entrar
             </button>
           </form>
 
-          <div className="mt-6 border-t border-[#d7d9df] pt-5 text-sm text-texto-escuro-suave">
+          <div className="mt-6 border-t border-borda-sutil pt-5 text-sm text-texto-escuro-suave">
             <p className="font-medium text-texto-escuro">Acesso de demonstração</p>
             <p className="mt-2">E-mail: admin@codexjovi.com</p>
             <p>Senha: Codex@2026</p>

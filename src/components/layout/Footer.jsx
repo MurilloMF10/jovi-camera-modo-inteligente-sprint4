@@ -9,6 +9,7 @@ function Footer() {
           <Link className="transition-colors hover:text-texto" to="/">Home</Link>
           <Link className="transition-colors hover:text-texto" to="/faq">FAQ</Link>
           <Link className="transition-colors hover:text-texto" to="/equipe">Equipe</Link>
+          <Link className="transition-colors hover:text-texto" to="/historico-jovi-math">JOVI MATH</Link>
           <Link className="text-azul-claro transition-colors hover:text-texto" to="/login">Área Jovi</Link>
         </nav>
       </div>

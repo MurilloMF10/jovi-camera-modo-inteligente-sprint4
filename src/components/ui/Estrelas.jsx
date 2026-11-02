@@ -13,7 +13,7 @@ function Estrelas({ notaSelecionada, aoSelecionar, erro }) {
               checked={notaSelecionada === nota}
               onChange={aoSelecionar}
             />
-            <span className={`flex h-10 w-10 items-center justify-center rounded-md border text-lg transition-colors focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-azul ${nota <= notaSelecionada ? 'border-azul bg-azul text-white' : 'border-[#c8cbd2] text-texto-escuro-suave hover:border-azul'}`} aria-hidden="true">★</span>
+            <span className={`flex h-10 w-10 items-center justify-center rounded-md border text-lg transition-colors focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-azul ${nota <= notaSelecionada ? 'border-azul bg-azul text-superficie' : 'border-borda-clara text-texto-escuro-suave hover:border-azul'}`} aria-hidden="true">★</span>
             <span className="sr-only">{nota} estrela{nota > 1 ? 's' : ''}</span>
           </label>
         ))}

@@ -1,3 +1,4 @@
+//regex feito por ia
 const EMAIL_VALIDO = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 export function validarContato(valores) {
