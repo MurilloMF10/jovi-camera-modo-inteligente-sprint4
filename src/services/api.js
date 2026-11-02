@@ -1,5 +1,5 @@
-const URL_PADRAO_API = 'https://6ae64db4877d34ccafc2c4ba.mockapi.io/api/v1'
-const URL_MENSAGENS = `${import.meta.env.VITE_API_URL || URL_PADRAO_API}/mensagens`
+
+const URL_MENSAGENS = `${import.meta.env.VITE_API_URL}/mensagens`
 
 async function requisitar(url, opcoes = {}) {
   const resposta = await fetch(url, opcoes)
