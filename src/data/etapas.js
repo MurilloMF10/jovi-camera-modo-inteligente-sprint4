@@ -1,7 +1,7 @@
 const etapas = [
   {
     numero: '01',
-    titulo: 'Ative o Modo Inteligente',
+    titulo: 'Ative o JOVI MATH',
     descricao: 'No app nativo de câmera, o usuário seleciona o modo dedicado ao reconhecimento de cálculos.',
   },
   {

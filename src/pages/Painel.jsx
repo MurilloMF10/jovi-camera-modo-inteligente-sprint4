@@ -77,21 +77,21 @@ function Painel() {
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-azul">Área Jovi</p>
+            <p className="text-sm font-medium text-azul">Área Jovi</p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Painel de mensagens</h1>
             <p className="mt-4 max-w-2xl leading-7 text-texto-escuro-suave">Acompanhe os contatos enviados e gerencie as mensagens recebidas.</p>
           </div>
-          <button className="w-fit rounded-md border border-[#c8cbd2] px-4 py-2 text-sm font-medium transition-colors hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul" type="button" onClick={sair}>
+          <button className="w-fit border-b border-borda-escura px-1 py-2 text-sm font-medium transition-colors hover:border-texto-escuro focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul" type="button" onClick={sair}>
             Sair
           </button>
         </div>
 
         {carregando ? (
-          <p className="mt-10 border border-[#d4d6db] bg-white p-6 text-texto-escuro-suave" aria-live="polite">Carregando mensagens...</p>
+          <p className="mt-10 border border-borda-sutil bg-superficie p-6 text-texto-escuro-suave" aria-live="polite">Carregando mensagens...</p>
         ) : erro ? (
-          <div className="mt-10 border border-red-200 bg-white p-6" role="alert">
-            <p className="text-red-700">{erro}</p>
-            <button className="mt-4 rounded-md bg-azul px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#324bc0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul" type="button" onClick={carregarMensagens}>Tentar novamente</button>
+          <div className="mt-10 border border-borda-erro bg-superficie p-6" role="alert">
+            <p className="text-erro">{erro}</p>
+            <button className="mt-4 rounded-sm bg-azul px-4 py-2 text-sm font-medium text-superficie transition-colors hover:bg-azul-profundo focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul" type="button" onClick={carregarMensagens}>Tentar novamente</button>
           </div>
         ) : (
           <>
@@ -99,13 +99,13 @@ function Painel() {
               <ResumoPainel total={mensagens.length} media={resumo.media} quantidadeAvaliacoes={resumo.quantidadeAvaliacoes} contagens={resumo.contagens} />
             </div>
 
-            <div className="mt-10 border-y border-[#d4d6db] py-5">
+            <div className="mt-10 border-y border-borda-sutil py-5">
               <p className="text-sm font-medium">Filtrar por assunto</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {filtros.map((filtro) => (
                   <button
                     key={filtro}
-                    className={`rounded-md px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul ${filtroAtivo === filtro ? 'bg-azul text-white' : 'border border-[#c8cbd2] bg-white text-texto-escuro hover:border-azul'}`}
+                    className={`border-b px-2 py-2 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul ${filtroAtivo === filtro ? 'border-azul text-azul' : 'border-transparent text-texto-escuro hover:border-borda-escura'}`}
                     type="button"
                     aria-pressed={filtroAtivo === filtro}
                     onClick={() => setFiltroAtivo(filtro)}
@@ -116,7 +116,7 @@ function Painel() {
               </div>
             </div>
 
-            {erroExclusao && <p className="mt-6 text-sm text-red-700" role="alert">{erroExclusao}</p>}
+            {erroExclusao && <p className="mt-6 text-sm text-erro" role="alert">{erroExclusao}</p>}
 
             {mensagensFiltradas.length ? (
               <div className="mt-6 grid gap-5">
@@ -125,7 +125,7 @@ function Painel() {
                 ))}
               </div>
             ) : (
-              <p className="mt-6 border border-[#d4d6db] bg-white p-6 leading-7 text-texto-escuro-suave">Nenhuma mensagem encontrada para este filtro.</p>
+              <p className="mt-6 border border-borda-sutil bg-superficie p-6 leading-7 text-texto-escuro-suave">Nenhuma mensagem encontrada para este filtro.</p>
             )}
           </>
         )}

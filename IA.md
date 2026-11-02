@@ -2,7 +2,7 @@
 
 ## Objetivo deste documento
 
-Este arquivo registra como ferramentas de Inteligência Artificial foram utilizadas durante o desenvolvimento do projeto acadêmico **Codex | Jovi — Modo Inteligente da Câmera Jovi**.
+Este arquivo registra como ferramentas de Inteligência Artificial foram utilizadas durante o desenvolvimento do projeto acadêmico **Codex | Jovi — JOVI MATH**.
 
 Os prompts abaixo são resumos representativos das interações realizadas e não uma transcrição literal das conversas. O grupo participou das decisões, revisou sugestões e autorizou as mudanças implementadas.
 
@@ -28,7 +28,7 @@ Apresentar o contexto geral do trabalho para a IA e definir como ela deveria aux
 
 ### Prompt representativo
 
-> “Este é o contexto do nosso projeto da Sprint 4. Estamos desenvolvendo uma landing page em React para o Modo Inteligente da Câmera Jovi. O projeto precisa seguir os requisitos da disciplina e ser implementado gradualmente, com explicações sobre as decisões técnicas.”
+> “Este é o contexto do nosso projeto da Sprint 4. Estamos desenvolvendo uma landing page em React para o JOVI MATH. O projeto precisa seguir os requisitos da disciplina e ser implementado gradualmente, com explicações sobre as decisões técnicas.”
 
 ### Como a IA foi utilizada
 

@@ -9,6 +9,7 @@ const linksNavegacao = [
   { caminho: '/avaliacoes', rotulo: 'Avaliações' },
   { caminho: '/faq', rotulo: 'FAQ' },
   { caminho: '/equipe', rotulo: 'Equipe' },
+  { caminho: '/historico-jovi-math', rotulo: 'JOVI MATH' },
 ]
 
 function Header({ aoAbrirContato }) {
@@ -26,7 +27,7 @@ function Header({ aoAbrirContato }) {
         </Link>
 
         <button
-          className="rounded-md p-2 text-texto transition-colors hover:bg-cartao focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul md:hidden"
+          className="p-2 text-texto transition-colors hover:text-azul-claro focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul md:hidden"
           type="button"
           aria-expanded={menuAberto}
           aria-controls="navegacao-principal"
@@ -45,7 +46,7 @@ function Header({ aoAbrirContato }) {
             <NavLink
               key={caminho}
               className={({ isActive }) =>
-                `rounded-md px-3 py-2 text-sm transition-colors hover:text-texto ${isActive ? 'text-azul-claro' : 'text-texto-suave'}`
+                `border-b-2 border-transparent px-1 py-2 text-sm transition-colors hover:text-texto ${isActive ? 'border-azul text-azul-claro' : 'text-texto-suave'}`
               }
               to={caminho}
               onClick={fecharMenu}
@@ -54,7 +55,7 @@ function Header({ aoAbrirContato }) {
             </NavLink>
           ))}
           <button
-            className="rounded-md bg-azul px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#324bc0] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul"
+            className="rounded-sm bg-azul px-4 py-2 text-sm font-medium text-superficie transition-colors hover:bg-azul-profundo focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul"
             type="button"
             onClick={(evento) => {
               fecharMenu()
@@ -64,7 +65,7 @@ function Header({ aoAbrirContato }) {
             Contate-nos
           </button>
           <NavLink
-            className="rounded-md px-3 py-2 text-sm text-azul-claro transition-colors hover:text-texto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul"
+            className="border-b border-transparent px-1 py-2 text-sm text-azul-claro transition-colors hover:border-azul-claro focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul"
             to="/login"
             onClick={fecharMenu}
           >
